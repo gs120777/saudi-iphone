@@ -1,0 +1,62 @@
+@import url("./input.css");
+@import url("./loader.css");
+@import url("./animate.css");
+@import url("./boxes.css");
+@import url("./prefill.css");
+@import url("./toast.css");
+@import url("./countdown.css");
+@import url("./personal.css");
+@import url("./faq.css");
+
+html,
+body {
+    height: 100%;
+}
+
+/* ------------ */
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#content-wrapper {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+/* ------------ */
+
+.navbar-item,
+.navbar-link {
+    color: unset;
+}
+
+@media (max-width: 1024px) {
+    .container.is-fluid {
+        display: flex;
+    }
+
+    .navbar-menu {
+        display: flex;
+        background-color: unset;
+    }
+
+    .navbar-menu .navbar-start,
+    .navbar-item__caption {
+        display: none;
+    }
+
+    .navbar-menu .navbar-end {
+        display: flex;
+    }
+}
+
+/* ------------ */
+
+#micro-slides .swiper-slide img {
+    border: 1px solid transparent;
+}

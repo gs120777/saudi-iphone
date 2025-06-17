@@ -1,0 +1,26 @@
+.custom-input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 40px;
+    background-color: white;
+    padding: 0 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.custom-input input {
+    outline: none;
+    flex: 1;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    color: black;
+    padding: 0 10px;
+}
+
+@media (max-width: 1024px) {
+    .custom-input {
+        display: none;
+    }
+}

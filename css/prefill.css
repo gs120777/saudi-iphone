@@ -1,0 +1,75 @@
+ul.progress-bar {
+    display: flex;
+    align-items: center;
+}
+
+ul.progress-bar li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+ul.progress-bar li .icons {
+    font-size: 25px;
+    margin: 0 60px;
+}
+
+ul.progress-bar li .label {
+    min-width: 101px;
+}
+
+ul.progress-bar li .step__number {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: black;
+    display: grid;
+    place-items: center;
+    color: ghostwhite;
+}
+
+ul.progress-bar .step .icons,
+ul.progress-bar .step .label {
+    position: absolute;
+}
+
+ul.progress-bar .step .icons {
+    bottom: 46px;
+}
+
+ul.progress-bar .step .label {
+    top: 40px;
+}
+
+ul.progress-bar .step__number .awesome {
+    display: none;
+}
+
+ul.progress-bar .step__number p {
+    font-size: 18px;
+}
+
+ul.progress-bar .step__number.active p {
+    display: none;
+}
+
+ul.progress-bar .step__number.active .awesome {
+    display: flex;
+}
+
+ul.progress-bar .connector {
+    height: 3px;
+    min-width: 50px;
+    width: auto;
+    flex-grow: 1;
+}
+
+div.summary {
+    border-radius: 6px;
+    border-color: #dee2e6;
+    border-width: 1px;
+    border-style: solid;
+}
